@@ -11,7 +11,7 @@
 ---
 
 ## 🔗 배포 링크
-👉 **Service URL:** ([[https://seun9u.github.io/TravelLink](http://sgu-tl-2-travellink-s3.s3-website.ap-northeast-3.amazonaws.com/)](http://sgu-tl-2-travellink-s3.s3-website.ap-northeast-3.amazonaws.com/))  
+👉 **Service URL:** [http://sgu-tl-2-travellink-s3.s3-website.ap-northeast-3.amazonaws.com/](http://sgu-tl-2-travellink-s3.s3-website.ap-northeast-3.amazonaws.com/)  
 *(AWS 비용 문제로 서버가 닫혀있을 수 있습니다.)*
 
 ---
