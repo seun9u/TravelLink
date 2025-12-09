@@ -39,9 +39,9 @@
     1.  Gunicorn 실행 옵션에 `--timeout 120`을 추가하여 AI 응답 대기 시간 확보.
     2.  리눅스 `Swap Memory` (1GB)를 설정하여 물리 메모리 한계 극복.
 
-### 3. Nginx 405 Method Not Allowed
-* **문제:** 배포 후 로그인(POST) 요청 시 Nginx에서 405 오류 반환.
-* **해결:** 정적 파일 경로와 API 프록시 경로(`/api`)를 `nginx.conf`에서 명확히 분리하고, 프론트엔드 환경변수(`REACT_APP_API_URL`)가 Nginx 포트(80)를 경유하도록 수정.
+### 3. AWS EC2 연결 타임아웃 (Security Group)
+* **문제:** EC2 인스턴스를 생성하고 서버를 가동했으나, 외부 브라우저에서 접속 시 무한 로딩(Time out) 발생.
+* **해결:** AWS 보안 그룹(Security Group)의 인바운드 규칙(Inbound Rules)을 점검하여, 웹 서비스 포트인 HTTP(80)와 SSH 접속을 위한 22번 포트를 0.0.0.0/0(전체 허용)으로 개방하여 해결.
 
 ---
 
