@@ -73,6 +73,7 @@ npm install
 npm start
 ```
 
+---
 
 ## 👤 Author
 강승구 (Seunggu Kang)   
